@@ -16,3 +16,5 @@ dependencies:
   - scikit-learn
   - ipympl
   - numpy
+  - pip:
+    - jupyter-offlinenotebook==0.0.11
