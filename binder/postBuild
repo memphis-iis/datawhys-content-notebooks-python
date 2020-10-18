@@ -1,3 +1,4 @@
+pip uninstall jupyter-offlinenotebook
 jupyter labextension install @jupyterlab/debugger 
 jupyter labextension install @aolney/fable-jupyterlab-blockly-extension 
 jupyter labextension install jupyterlab-plotly@4.8.1 

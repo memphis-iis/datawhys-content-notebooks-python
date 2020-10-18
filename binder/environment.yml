@@ -5,7 +5,7 @@ channels:
   - plotly
 dependencies:
   - python=3.7
-  - xeus-python=0.7.1
+  - xeus-python
   - jupyterlab=1.2.14
   - ptvsd
   - nodejs
