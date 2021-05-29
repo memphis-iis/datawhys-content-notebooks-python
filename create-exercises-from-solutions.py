@@ -1,6 +1,14 @@
 import os
 import nbformat as nbf
 
+outputDir = 'exercises-from-solutions'
+try:
+    os.mkdir(outputDir)
+except OSError:
+    print ("Directory %s already exists" % outputDir)
+else:
+    print ("Successfully created the directory %s " % outputDir)
+
 for file in os.listdir('.'):
     if file.endswith('.ipynb'):
         ntbk = nbf.read(file, nbf.NO_CONVERT)
@@ -12,4 +20,4 @@ for file in os.listdir('.'):
             cells_to_keep.append(cell)
         new_ntbk = ntbk
         new_ntbk.cells = cells_to_keep
-        nbf.write(new_ntbk, os.path.splitext(file)[0]+'-Exercise.ipynb', version=nbf.NO_CONVERT)
+        nbf.write(new_ntbk, os.path.join(outputDir,file), version=nbf.NO_CONVERT)
