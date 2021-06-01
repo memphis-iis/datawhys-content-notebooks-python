@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Introduction to Jupiter Notebooks: Problem Solving</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      word-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Introduction to Jupiter Notebooks: Problem Solving</h1>
+</header>
+<h1 id="introduction-to-jupiter-notebooks-problem-solving">Introduction to Jupiter Notebooks: Problem Solving</h1>
+<p>Let’s practice the skills we learned during the last lesson on Jupyter Notebooks.</p>
+<h2 id="create-a-spreadsheet-of-data">Create a Spreadsheet of Data</h2>
+<p>Create an Excel spreadsheet as follows.</p>
+<ul>
+<li>Sign into <a href="https://www.office.com/launch/excel" class="uri">https://www.office.com/launch/excel</a> using your <code>memphis.edu</code> email.</li>
+<li>Name the spreadsheet file <em>scores</em>.</li>
+<li>The first row must be headings only.</li>
+<li>The first three columns must have the following headings: <em>Name</em>, <em>Exam1</em>, and <em>Exam2</em>.</li>
+<li>Below the headings row, there must be 15 rows of data. Fill the rows in with a variety of made-up names and exam scores (assuming that each exam score is between 0 and 100 points).</li>
+</ul>
+<p>Upload the spreadsheet into your JupyterLab workspace.</p>
+<h2 id="create-a-new-notebook">Create a New Notebook</h2>
+<p>Create a new xpython notebook named <code>Jupyter-notebooks-intro-PS.ipynb</code> in your JupyterLab workspace.</p>
+<ul>
+<li>Be sure that the notebook is using the <em>xpython</em> kernel (NOT the <em>Python 3</em> kernel).</li>
+</ul>
+<h2 id="add-a-markdown-cell">Add a Markdown Cell</h2>
+<p>Make the first cell in the notebook a Markdown cell that looks like the following figure.</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-1.png" /></p>
+<ul>
+<li>Don’t forget to set the cell type to <em>Markdown</em>.</li>
+<li>Hint: The cell includes a level-1 heading and a level-2 heading.</li>
+<li>Hint: See the <a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf">GitHub Markdown Cheatsheet</a> for Markdown examples.</li>
+</ul>
+<p>Run the cell to make it render the Markdown as pretty headings and text.</p>
+<h2 id="import-the-pandas-library">Import the Pandas Library</h2>
+<p>Add a code cell that imports the Pandas library.</p>
+<ul>
+<li>Import the Pandas library as <code>pd</code>.</li>
+</ul>
+<p>Run the code cell. (No output should be displayed.)</p>
+<h2 id="read-the-spreadsheet-into-a-dataframe">Read the Spreadsheet into a DataFrame</h2>
+<p>Add a Markdown cell that looks like this:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-2.png" /></p>
+<ul>
+<li>Hint: The heading in this cell (and all future Markdown cells) is a level-2 heading.</li>
+<li>Hint: To format the <code>df</code> variable, we surround the df in backticks (i.e., ``s).</li>
+</ul>
+<p>Add a code cell that reads the spreadsheet you uploaded into a DataFrame.</p>
+<ul>
+<li>Name the DataFrame variable <code>df</code>.</li>
+</ul>
+<p>Run the code cell. (No output should be displayed.)</p>
+<h2 id="display-the-contents-of-the-dataframe">Display the Contents of the DataFrame</h2>
+<p>Add a Markdown cell that looks like this:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-3.png" /></p>
+<p>Add a code cell that displays the contents of the DataFrame.</p>
+<ul>
+<li>Hint: This involves only adding a variable block.</li>
+</ul>
+<p>Run the code cell and note the output, which should resemble the following:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-4.png" /></p>
+<h2 id="display-an-individual-column-in-the-dataframe">Display an Individual Column in the DataFrame</h2>
+<p>Add a Markdown cell that looks like this:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-5.png" /></p>
+<p>Add a code cell that displays a summary of only the data in the Exam1 column.</p>
+<ul>
+<li>Hint: This involves one of the <em>Lists</em> blocks.</li>
+</ul>
+<p>Run the code cell and note the output, which should resemble the following:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-6.png" /></p>
+<h2 id="calculate-the-average-mean-value-of-a-column-in-the-dataframe">Calculate the Average (Mean) Value of a Column in the DataFrame</h2>
+<p>Add a Markdown cell that looks like this:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-7.png" /></p>
+<p>Add a code cell that calculate the average value in only the data in the Exam1 column.</p>
+<ul>
+<li>Hint: First, store the Exam1 column as a list in a new variable (call it <code>exam1</code>). Then, run the <code>mean</code> operation on the <code>exam1</code> variable.</li>
+</ul>
+<p>Run the code cell and note the output, which should resemble the following:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-8.png" /></p>
+<h2 id="calculate-the-average-mean-values-of-all-columns-in-the-dataframe">Calculate the Average (Mean) Values of All Columns in the DataFrame</h2>
+<p>Add a Markdown cell that looks like this:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-9.png" /></p>
+<p>Add a code cell that calculates the average value for each column in the DataFrame.</p>
+<ul>
+<li>Hint: This can be done by calling the <code>mean</code> operation on the entire DataFrame.</li>
+</ul>
+<p>Run the code cell and note the output, which should resemble the following:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-10.png" /></p>
+<h2 id="display-a-summary-of-descriptive-statistics-for-each-column-in-the-dataframe">Display a Summary of Descriptive Statistics for Each Column in the DataFrame</h2>
+<p>Add a Markdown cell that looks like this:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-11.png" /></p>
+<p>Add a code cell that displays a summary of descriptive statistics for each column in the DataFrame.</p>
+<ul>
+<li>Hint: This can be done by calling the <code>describe</code> operation on the entire DataFrame.</li>
+</ul>
+<p>Run the code cell and note the output, which should resemble the following:</p>
+<p><img src="images/Jupyter-notebooks-intro-fig-12.png" /></p>
+<p><strong><em>Congratulations! You’ve completed the first problem-solving notebook!</em></strong></p>
+</body>
+</html>
