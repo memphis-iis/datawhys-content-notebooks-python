@@ -1,3 +1,12 @@
+---
+header-includes: |
+  <style>
+  body {
+    max-width: 42em;
+  }
+  </style>
+---
+
 # Introduction to Jupiter Notebooks: Problem Solving
 
 Let's practice the skills we learned during the last lesson on Jupyter Notebooks.
