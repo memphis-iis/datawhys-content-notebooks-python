@@ -45,9 +45,18 @@
 
 - Able filter a selected column from the DataFrame.
 - Able to assign the list of column values to a variable.
-- Able to call the `mean` method on the variable.
+- Able to call the `mean` method on the column variable.
 
 ## Averaging All Columns in a DataFrame
 
+- Able to call the `mean` method on the DataFrame variable.
+  - Able to find/select the variable `do` block.
+  - Able to select the variable argument correctly.
+  - Able to select the method argument correctly.
+
 ## Printing Descriptive Statistics for a DataFrame
 
+- Able to call the `describe` method on the DataFrame variable.
+  - Able to find/select the variable `do` block.
+  - Able to select the variable argument correctly.
+  - Able to select the method argument correctly.
