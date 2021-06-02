@@ -13,12 +13,11 @@ Let's practice the skills we learned during the last lesson on Jupyter Notebooks
 
 ## Create a Spreadsheet of Data
 
-Create an Excel spreadsheet as follows.
+Create a CSV (Comma-Separated Values) spreadsheet as follows.
 
-- Sign into <https://www.office.com/launch/excel> using your `memphis.edu` email.
-- Name the spreadsheet file _scores_.
+- Name the spreadsheet file `scores.csv`.
 - The first row must be headings only.
-- The first three columns must have the following headings: _Name_, _Exam1_, and _Exam2_.
+- The first three columns must have the following headings: `Name`, `Exam1`, and `Exam2`.
 - Below the headings row, there must be 15 rows of data. Fill the rows in with a variety of made-up names and exam scores (assuming that each exam score is between 0 and 100 points).
 
 Upload the spreadsheet into your JupyterLab workspace.
