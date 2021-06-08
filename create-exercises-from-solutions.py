@@ -17,6 +17,15 @@ for file in os.listdir('.'):
             # we assume that code cells containing serialize blocks are precisely those with solutions we need to delete 
             if cell.cell_type == "code" and "#<xml" in cell.source:
                 cell.source = []
+            # blank out answer portion of reflection questions
+            if cell.cell_type == "markdown" and "**ANSWER:" in cell.source:
+                newSource = []
+                for line in cell.source.splitlines():
+                    newSource.append(line + "\n")
+                    if line.startswith("**ANSWER:"):
+                        newSource.append("\n\n<hr>")
+                        break
+                cell.source = newSource
             cells_to_keep.append(cell)
         new_ntbk = ntbk
         new_ntbk.cells = cells_to_keep
