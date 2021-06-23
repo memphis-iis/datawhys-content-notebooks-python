@@ -17,6 +17,7 @@ for file in os.listdir('.'):
             # we assume that code cells containing serialize blocks are precisely those with solutions we need to delete 
             if cell.cell_type == "code" and "#<xml" in cell.source:
                 cell.source = []
+                cell.outputs = [] # I like the idea of showing the correct output, but it seems to create loading problems when bandwidth is low
             # blank out answer portion of reflection questions
             if cell.cell_type == "markdown" and "**ANSWER:" in cell.source:
                 newSource = []
