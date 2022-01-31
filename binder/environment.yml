@@ -1,20 +1,21 @@
 name: datawhys
 channels:
+  - plotly
   - conda-forge
   - defaults
-  - plotly
 dependencies:
-  - python=3.7
-  - xeus-python
-  - jupyterlab=1.2.14
-  - ptvsd
-  - nodejs
-  - plotly=4.8.1
-  - pip
-  - pandas
-  - matplotlib
-  - scikit-learn
   - ipympl
+  - jupyterlab=1.2
+  - matplotlib
+  - nodejs=16
   - numpy
-  - pip:
-    - jupyter-offlinenotebook==0.0.11
+  - openssl<3
+  - pandas
+  - pip
+  - plotly
+  - ptvsd
+  - python=3.7
+  - scikit-learn
+  - xeus=0.23
+  - xeus-python
+    
