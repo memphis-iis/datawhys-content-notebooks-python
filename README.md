@@ -32,7 +32,7 @@ If you've never used Jupyter or want to try the Blockly extension, check out the
 ### Prerequisites
 
 - [JupyterLab](https://jupyter.org/install)
-- [Blockly extension](https://github.com/aolney/fable-jupyterlab-blockly-extension) (optional but strongly recommended)
+- [Blockly extension](https://github.com/aolney/jupyterlab-blockly-python-extension) (optional but strongly recommended)
 - [Xeus Python Kernel](https://github.com/jupyter-xeus/xeus-python) (optional but strongly recommended)
 
 The above is a minimal environment.
