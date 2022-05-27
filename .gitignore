@@ -1,3 +1,5 @@
 .ipynb_checkpoints/
 exercises-from-solutions/
 *.sh
+notebooks-converted-to-v2-plugin/
+v1-temp/
