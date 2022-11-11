@@ -11,6 +11,7 @@ else:
 
 for file in os.listdir('.'):
     if file.endswith('.ipynb'):
+        print(file)
         ntbk = nbf.read(file, nbf.NO_CONVERT)
         cells_to_keep = []
         for cell in ntbk.cells:
