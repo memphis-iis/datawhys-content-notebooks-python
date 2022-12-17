@@ -19,7 +19,7 @@ Click on any notebook in the repository, and GitHub will render it in your brows
 
 Launch a demo session by clicking on the Binder badge below.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/memphis-iis/datawhys-content-notebooks/master?urlpath=lab)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/memphis-iis/datawhys-content-notebooks-python/master?urlpath=lab)
 
 If you've never used Jupyter or want to try the Blockly extension, check out the tutorial video below.
 
