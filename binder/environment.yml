@@ -4,18 +4,26 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - ipympl
-  - jupyterlab=1.2
-  - matplotlib
-  - nodejs=16
-  - numpy
-  - openssl<3
-  - pandas
+  - python=3.10.6
+  - jupyterlab=4.1.8
+  - ca-certificates
+  - openssl
+  - nodejs=20
+  - git
+  - copier=9
+  - jinja2-time
+  - certifi
+  - jupyter-lsp-python
+  - jupyterlab-lsp
+  - scikit-learn=1.4.2
+  - anywidget
+  - plotly=5.22.0
+  - pandas=2.2.2
   - pip
-  - plotly
-  - ptvsd
-  - python=3.7
-  - scikit-learn
-  - xeus=0.23
-  - xeus-python
+  - jedi=0.18.1 
+  - numpy
+  - statsmodels
+  - pygraphviz
+  - python-graphviz
+  - seaborn 
     

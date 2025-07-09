@@ -1,5 +1,1 @@
-jupyter labextension uninstall jupyter-offlinenotebook
-jupyter labextension install @jupyterlab/debugger 
-jupyter labextension install @aolney/jupyterlab-blockly-python-extension
-jupyter labextension install jupyterlab-plotly@4.8.1 
-jupyter labextension install @jupyter-widgets/jupyterlab-manager plotlywidget@4.8.1 @ijmbarr/jupyterlab_spellchecker
+pip install jupyterlab_blockly_polyglot_extension
