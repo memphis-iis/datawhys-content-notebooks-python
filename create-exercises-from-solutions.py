@@ -1,3 +1,5 @@
+# This script creates student exercises from the notebooks by removing answers
+# Run it with `python create-exercises-from-solutions.py`
 import os
 import nbformat as nbf
 
@@ -15,7 +17,7 @@ for file in os.listdir('.'):
         ntbk = nbf.read(file, nbf.NO_CONVERT)
         cells_to_keep = []
         for cell in ntbk.cells:
-            # we assume that code cells containing serialize blocks are precisely those with solutions we need to delete 
+            # we assume that code cells containing serialized blocks are precisely those with solutions we need to delete 
             if cell.cell_type == "code" and "#<xml" in cell.source:
                 cell.source = []
                 cell.outputs = [] # I like the idea of showing the correct output, but it seems to create loading problems when bandwidth is low
