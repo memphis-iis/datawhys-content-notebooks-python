@@ -25,6 +25,15 @@ If you've never used Jupyter or want to try the Blockly extension, check out the
 
 [![Tutorial video using Blockly](https://img.youtube.com/vi/-luPzplPDI0/0.jpg)](https://youtu.be/-luPzplPDI0 "Tutorial video using Blockly")
 
+## Use
+
+Instructors can use these notebooks as-is: they provide solutions to each problem.
+
+Student versions (without answers) can be created by running the `create-exercises-from-solutions.py` script.
+This script creates a subfolder containing all notebooks with answers removed.
+
+Typically we place these student notebooks in their own repository and then distribute exercises using [nbgitpller](https://nbgitpuller.readthedocs.io/en/latest/) with [TLJH](https://tljh.jupyter.org/en/latest/).
+However you could also put the student notebooks in an LMS for students to download.
 
 ## Development
 
