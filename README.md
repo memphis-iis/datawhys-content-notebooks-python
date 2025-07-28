@@ -23,7 +23,7 @@ Launch a demo session by clicking on the Binder badge below.
 
 If you've never used Jupyter or want to try the Blockly extension, check out the tutorial video below.
 
-[![Tutorial video using Blockly](https://img.youtube.com/vi/-luPzplPDI0/0.jpg)](https://youtu.be/-luPzplPDI0 "Tutorial video using Blockly")
+[![Tutorial video using Blockly](https://img.youtube.com/vi/Bmd60BQP0Qk/0.jpg)](https://youtu.be/Bmd60BQP0Qk "Tutorial video using Blockly")
 
 ## Use
 
